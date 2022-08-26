@@ -37,7 +37,7 @@
     A full record of SAPD's calls for service.
     <br />
     <br />
-    <a href="https://github.com/ryan-serpico/sa-sapd-calls-mirror">View Data</a>
+    <a href="https://flatgithub.com/ryan-serpico/sa-sapd-calls-mirror/blob/main/output/archive.csv">View Data</a>
     ·
     <a href="https://github.com/ryan-serpico/sa-sapd-calls-mirror/issues">Report Bug</a>
     ·
