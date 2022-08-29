@@ -1,30 +1,11 @@
 <a name="readme-top"></a>
-<!--
-*** Thanks for checking out the Best-README-Template. If you have a suggestion
-*** that would make this better, please fork the repo and create a pull request
-*** or simply open an issue with the tag "enhancement".
-*** Don't forget to give the project a star!
-*** Thanks again! Now go create something AMAZING! :D
--->
 
-
-
-<!-- PROJECT SHIELDS -->
-<!--
-*** I'm using markdown "reference style" links for readability.
-*** Reference links are enclosed in brackets [ ] instead of parentheses ( ).
-*** See the bottom of this document for the declaration of the reference variables
-*** for contributors-url, forks-url, etc. This is an optional, concise syntax you may use.
-*** https://www.markdownguide.org/basic-syntax/#reference-style-links
--->
 [![Contributors][contributors-shield]][contributors-url]
 [![Forks][forks-shield]][forks-url]
 [![Stargazers][stars-shield]][stars-url]
 [![Issues][issues-shield]][issues-url]
 [![MIT License][license-shield]][license-url]
 [![LinkedIn][linkedin-shield]][linkedin-url]
-
-
 
 <!-- PROJECT LOGO -->
 <br />
@@ -60,11 +41,10 @@
     <li>
       <a href="#getting-started">Getting Started</a>
       <ul>
-        <li><a href="#prerequisites">Prerequisites</a></li>
         <li><a href="#installation">Installation</a></li>
       </ul>
     </li>
-    <li><a href="#usage">Usage</a></li>
+    <!-- <li><a href="#usage">Usage</a></li> -->
     <li><a href="#roadmap">Roadmap</a></li>
     <li><a href="#contributing">Contributing</a></li>
     <li><a href="#license">License</a></li>
@@ -78,9 +58,21 @@
 <!-- ABOUT THE PROJECT -->
 ## About The Project
 [![Product Name Screen Shot][product-screenshot]](https://www.expressnews.com/)
-TL;DR: This bot updates an archive of [calls to service to the San Antonio Police Department](https://www.sanantonio.gov/SAPD/Calls). 
+**TL;DR:** This bot updates [an archive](https://github.com/ryan-serpico/sa-sapd-calls-mirror/blob/main/output/archive.csv) of [calls to service to the San Antonio Police Department](https://www.sanantonio.gov/SAPD/Calls). The aim is to provide a full and accessible record of calls to service to SAPD.
 
-I will provide a longer explanation next week.
+The San Antonio Police Department (SAPD) maintains two dashboards that provide a record of calls to service. One for [historical calls](https://webapp3.sanantonio.gov/policecalls/Reports.aspx) and another [focused on the last seven days](https://experience.arcgis.com/experience/7204b710e882450e9cf0f5d78334cc59) (updated once a week).
+
+The historical calls web app is problematic because it can only return 10,000 call records at a time. If you want to look at these data over time for each ZIP code area around San Antonio going back ten years, you're going to have to click through thousands of forms. And even if you were to do that, there is an issue with the web app where it doesn't spit out the the data in a format accessible to the public when you click the "Export to Excel." button. It downloads a .aspx file instead.
+
+The dashboard dedicated to the last seven days has something that the historical calls database doesn't have: call coordinates. This is useful for performing spatial analysis on the data. Unfortunately, the there is no way for the public to access this data.
+
+*Enter this bot*. It checks for new calls to service listed in the dashboard dedicated to the last seven days and adds them [to an archive](https://github.com/ryan-serpico/sa-sapd-calls-mirror/blob/main/output/archive.csv).
+
+This means that in the future, you won't need to go to SAPD's website to pull data. You can just check the archive here and download everything in its entirety.
+
+**Note:** SAPD makes clear that this data are not crimes but calls for service. 
+
+> Police Calls for service reflect each time someone called the police for service.  These are CALLS FOR SERVICE, NOT Lists of Crimes or Crime Reports. Calls are titled as they are called in and dispatched. For example, a call may be dispatched as a "robbery", as called in by a citizen, but later the officer finds it is a "burglary." This would be listed in the Calls for Service report as a "robbery".
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -122,24 +114,19 @@ If you want to run this code locally, here you go.
 
 Use this space to show useful examples of how a project can be used. Additional screenshots, code examples and demos work well in this space. You may also link to more resources.
 
-_For more examples, please refer to the [Documentation](https://example.com)_
-
 <p align="right">(<a href="#readme-top">back to top</a>)</p> -->
 
 
 
 <!-- ROADMAP -->
-<!-- ## Roadmap
+## Roadmap
 
-- [ ] Feature 1
-- [ ] Feature 2
-- [ ] Feature 3
-    - [ ] Nested Feature
+- [ ] Add calls for service prior to August 17, 2022 to archive.csv.
 
 See the [open issues](https://github.com/ryan-serpico/sa-sapd-calls-mirror/issues) for a full list of proposed features (and known issues).
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
- -->
+
 
 
 <!-- CONTRIBUTING -->
@@ -163,7 +150,7 @@ Don't forget to give the project a star! Thanks again!
 <!-- LICENSE -->
 ## License
 
-Distributed under the MIT License. See `LICENSE.txt` for more information.
+Distributed under the MIT License. See `LICENSE.md` for more information.
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -181,11 +168,11 @@ Project Link: [https://github.com/ryan-serpico/sa-sapd-calls-mirror](https://git
 
 
 <!-- ACKNOWLEDGMENTS -->
-<!-- ## Acknowledgments
+## Acknowledgments
 
-* []()
-* []()
-* []() -->
+* [Taylor Pettaway](https://www.expressnews.com/author/taylor-pettaway/) for giving me a reason to finally do this.
+* The [City of San Antonio](https://www.sanantonio.gov/)
+* The [San Antonio Police Department](https://www.sanantonio.gov/SAPD/Calls)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -202,7 +189,7 @@ Project Link: [https://github.com/ryan-serpico/sa-sapd-calls-mirror](https://git
 [issues-shield]: https://img.shields.io/github/issues/ryan-serpico/sa-sapd-calls-mirror.svg?style=for-the-badge
 [issues-url]: https://github.com/ryan-serpico/sa-sapd-calls-mirror/issues
 [license-shield]: https://img.shields.io/github/license/ryan-serpico/sa-sapd-calls-mirror.svg?style=for-the-badge
-[license-url]: https://github.com/ryan-serpico/sa-sapd-calls-mirror/blob/master/LICENSE.txt
+[license-url]: https://github.com/ryan-serpico/sa-sapd-calls-mirror/blob/main/LICENSE.md
 [linkedin-shield]: https://img.shields.io/badge/-LinkedIn-black.svg?style=for-the-badge&logo=linkedin&colorB=555
 [linkedin-url]: https://linkedin.com/in/ryanserpico
 [product-screenshot]: img/archive_ss.png
