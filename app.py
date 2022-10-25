@@ -70,5 +70,27 @@ def compile_data():
     print('Updating archive ...')
     df.to_csv('output/archive.csv', index=False)
 
-compile_data()
+def breakup_archive(data):
+    '''
+    This function breaks up the archive into separate csv files for each month each year.
+    '''
+    print('👉 Breaking up archive ...')
+    df = pd.read_csv(data)
+
+    # Extract the date parts from the Date column
+    df['Year'] = df['Date'].str.split('/', expand=True)[2]
+    df['Month'] = df['Date'].str.split('/', expand=True)[0]
+
+    # Remove leading zeros from the Month column
+    df['Month'] = df['Month'].str.lstrip('0')
+
+    for month in df['Month'].unique():
+        for year in df['Year'].unique():
+            df[(df['Month'] == month) & (df['Year'] == year)].to_csv(f'output/{year}-{month}.csv', index=False)
+
+
+breakup_archive('output/archive.csv')
+
+
+# compile_data()
 
