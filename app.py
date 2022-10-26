@@ -34,11 +34,18 @@ def transform_data(data, i):
     # Pull the time from the ResponseDateText column and put it in a new column
     df['Time'] = df['ResponseDateText'].str.split(' ', expand=True)[1] + ' ' + df['ResponseDateText'].str.split(' ', expand=True)[2]
 
+    # Extract the date parts from the Date column
+    df['Year'] = df['Date'].str.split('/', expand=True)[2]
+    df['Month'] = df['Date'].str.split('/', expand=True)[0]
+    # Remove leading zeros from the Month column
+    df['Month'] = df['Month'].str.lstrip('0')
+
+
     # Drop the first two columns
     df = df.drop(['OBJECTID', 'CADID', 'ResponseDateText'], axis=1)
 
     # Reorder the columns
-    df = df[['Date', 'Time', 'Address', 'Zipcode', 'Category', 'ProblemType', 'PatrolDistrict', 'Substation', 'IncidentNumber', 'LAT', 'LON', 'ResponseDate', 'URL', 'Color', 'About']]
+    df = df[['Date', 'Time', 'Address', 'Zipcode', 'Category', 'ProblemType', 'PatrolDistrict', 'Substation', 'IncidentNumber', 'LAT', 'LON', 'ResponseDate', 'URL', 'Color', 'About', 'Year', 'Month']]
 
     return df
 
@@ -46,7 +53,7 @@ def compile_data():
     '''
     This function pages through the SAPD's arcgis server responses and compiles all the data into a single dataframe. It then checks to see which records don't exist in the archive and subsequently adds them to it.
     '''
-    df = pd.DataFrame()
+    new_data_df = pd.DataFrame()
 
     # Create a for loop that starts at 0 and goes to 20000, iterating by 2000 each time
     for i in range(0, 200000, 2000):
@@ -54,21 +61,27 @@ def compile_data():
 
         try:
             partial_data = transform_data(data, i)
-            df = pd.concat([df, partial_data])
+            new_data_df = pd.concat([new_data_df, partial_data])
         except Exception as e:
             print(e)
             break
-        print('Paging through data ...')
     
-    print('Loading archive ...')
-    archive_df = pd.read_csv('output/archive.csv')
+    for month in new_data_df['Month'].unique():
+        for year in new_data_df['Year'].unique():
+            print(f'👉 Checking for new data for {year}-{month}.csv ...')
+            try:
+                # if the file doesn't already exist, create it
+                if not os.path.exists(f'output/{year}-{month}.csv'):
+                    new_data_df[(new_data_df['Month'] == month) & (new_data_df['Year'] == year)].to_csv(f'output/{year}-{month}.csv', index=False)
 
-    # Add any rows from df that are not in archive_df to archive_df based on their IncidentNumber
-    print('Merging and deduping ...')
-    df = pd.concat([archive_df, df]).drop_duplicates(subset='IncidentNumber', keep='first')
-
-    print('Updating archive ...')
-    df.to_csv('output/archive.csv', index=False)
+                archive = pd.read_csv(f'output/{year}-{month}.csv')
+                print(f'👉 Merging and deduping {year}-{month}.csv ...')
+                appended_df = pd.concat([archive, new_data_df[(new_data_df['Month'] == month) & (new_data_df['Year'] == year)]]).drop_duplicates(subset='IncidentNumber', keep='first')
+                print(f'👉 Updating {year}-{month}.csv')
+                appended_df.to_csv(f'output/{year}-{month}.csv', index=False)
+            except Exception as e:
+                print(e)
+                pass
 
 def breakup_archive(data):
     '''
@@ -88,9 +101,5 @@ def breakup_archive(data):
         for year in df['Year'].unique():
             df[(df['Month'] == month) & (df['Year'] == year)].to_csv(f'output/{year}-{month}.csv', index=False)
 
-
-breakup_archive('output/archive.csv')
-
-
-# compile_data()
+compile_data()
 
