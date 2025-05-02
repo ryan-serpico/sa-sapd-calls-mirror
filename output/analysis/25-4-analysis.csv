@@ -1,0 +1,79 @@
+Zipcode,Population,Count,IncidentsPer1000,ProblemType,ProblemCount
+78205,1503.0,2657,1767.8,Patrol By,518
+78215,2925.0,1207,412.6,Traffic Related,240
+78235,1471.0,245,166.6,Disturbance,45
+78216,45325.0,6117,135.0,Traffic Related,1675
+78204,12850.0,1567,121.9,Traffic Related,363
+78203,6162.0,706,114.6,Patrol By,86
+78257,8113.0,922,113.6,Traffic Related,247
+78212,27940.0,3058,109.4,Traffic Related,483
+78202,11675.0,1241,106.3,Patrol By,206
+78220,17095.0,1732,101.3,Disturbance,247
+78207,57700.0,5672,98.3,Disturbance,825
+78238,27027.0,2644,97.8,Traffic Related,736
+78208,4549.0,433,95.2,Traffic Related,68
+78219,17705.0,1551,87.6,Traffic Related,311
+78218,38749.0,3347,86.4,Traffic Related,913
+78214,26805.0,2272,84.8,Disturbance,322
+78229,35589.0,2954,83.0,Traffic Related,587
+78227,49326.0,3920,79.5,Traffic Related,798
+78224,22569.0,1723,76.3,Traffic Related,350
+78230,45661.0,3431,75.1,Traffic Related,1526
+78201,50336.0,3709,73.7,Patrol By,595
+78210,37061.0,2728,73.6,Patrol By,370
+78237,41247.0,2888,70.0,Disturbance,406
+78211,34539.0,2173,62.9,Traffic Related,316
+78223,56484.0,3394,60.1,Disturbance,551
+78226,8012.0,462,57.7,Disturbance,70
+78225,15147.0,846,55.9,Traffic Related,164
+78217,35257.0,1962,55.6,Traffic Related,340
+78221,42535.0,2296,54.0,Disturbance,296
+78231,10132.0,535,52.8,Patrol By,169
+78242,35159.0,1692,48.1,Patrol By,243
+78228,61441.0,2950,48.0,Disturbance,445
+78256,11435.0,536,46.9,Disturbance,64
+78209,44706.0,2093,46.8,Traffic Related,436
+78249,61712.0,2852,46.2,Traffic Related,690
+78222,25935.0,1171,45.2,Disturbance,129
+78232,39638.0,1716,43.3,Traffic Related,621
+78213,45124.0,1882,41.7,Traffic Related,280
+78240,61937.0,2504,40.4,Disturbance,314
+78247,53597.0,2114,39.4,Traffic Related,364
+78251,65885.0,2417,36.7,Traffic Related,317
+78233,48060.0,1703,35.4,Minor Accident,224
+78258,47146.0,1541,32.7,Traffic Related,452
+78073,8897.0,275,30.9,Disturbance,31
+78245,76392.0,2229,29.2,Traffic Related,391
+78250,62951.0,1692,26.9,Traffic Related,282
+78252,11479.0,302,26.3,SAPD Non-Emergency Call,30
+78259,26591.0,648,24.4,Traffic Related,160
+78244,33988.0,637,18.7,SAPD Non-Emergency Call,81
+78112,8725.0,152,17.4,Traffic Related,36
+78248,13822.0,225,16.3,Traffic Related,32
+78253,41900.0,668,15.9,SAPD Non-Emergency Call,164
+78264,10603.0,163,15.4,Patrol By,62
+78254,61141.0,877,14.3,Traffic Related,137
+78234,4917.0,70,14.2,Traffic Related,25
+78266,6592.0,90,13.7,Minor Accident,15
+78109,39424.0,493,12.5,Traffic Related,92
+78255,15064.0,144,9.6,Traffic Related,18
+78239,26966.0,223,8.3,SAPD Non-Emergency Call,25
+78260,26164.0,215,8.2,Traffic Related,41
+78023,29847.0,238,8.0,Traffic Related,51
+78263,3561.0,26,7.3,SAPD Non-Emergency Call,11
+78243,419.0,3,7.2,Burglary,1
+78236,6760.0,37,5.5,Traffic Related,8
+78002,5758.0,22,3.8,SAPD Non-Emergency Call,11
+78261,16518.0,59,3.6,SAPD Non-Emergency Call,35
+78154,41171.0,61,1.5,Traffic Related,16
+78152,2569.0,3,1.2,SAPD Non-Emergency Call,2
+78101,7434.0,6,0.8,SAPD Non-Emergency Call,5
+78006,37568.0,23,0.6,SAPD Emergency Call,11
+78069,6187.0,3,0.5,SAPD Emergency Call,3
+78052,6128.0,3,0.5,Recovered Stolen Property,1
+78404,16852.0,5,0.3,Patrol By,3
+78015,17187.0,6,0.3,SAPD Non-Emergency Call,4
+78124,6553.0,1,0.2,Traffic Related,1
+78155,50832.0,2,0.0,Patrol By,2
+78130,79786.0,2,0.0,Officer Traffic Stop,1
+78148,22955.0,1,0.0,SAPD Emergency Call,1
