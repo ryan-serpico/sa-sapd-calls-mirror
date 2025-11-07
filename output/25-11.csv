@@ -11109,7 +11109,6 @@ Date,Time,Address,Zipcode,Category,ProblemType,PatrolDistrict,Substation,Inciden
 11/04/25, 2:10:50,1400 Kayton Ave,78210,Other Calls,Welfare Check,4210,EAST,SAPD-2025-1538403,29.397316,-98.446576,1762243850000,http://www.sanantonio.gov/sapd/Calls.aspx,Blue,a tbd link,25,11
 11/04/25, 2:00:59,300 HASKIN DR,78209,Other Calls,Patrol By,3340,NORTH,SAPD-2025-1538382,29.499864,-98.446396,1762243259000,http://www.sanantonio.gov/sapd/Calls.aspx,Blue,a tbd link,25,11
 11/04/25, 2:02:43,1400-1498 N MAIN AVE,78212,Traffic Calls,Traffic Related,1210,DOWNTOWN,SAPD-2025-1538388,29.442453,-98.494186,1762243363000,http://www.sanantonio.gov/sapd/Calls.aspx,Yellow,a tbd link,25,11
-11/04/25, 2:03:00,1400 MIRA VISTA,78228,Other Calls,Patrol By,,,,29.453772,-98.60077,1762243380000,http://www.sanantonio.gov/sapd/Calls.aspx,Blue,a tbd link,25,11
 11/04/25, 2:05:13,1300 Mccullough Ave,78212,Other Calls,DOA,1210,DOWNTOWN,SAPD-2025-1538393,29.441558,-98.491185,1762243513000,http://www.sanantonio.gov/sapd/Calls.aspx,Blue,a tbd link,25,11
 11/04/25, 2:06:55,8000 Bandera Rd,78240,Other Calls,Disturbance,7320,PRUE,SAPD-2025-1538395,29.518185,-98.633406,1762243615000,http://www.sanantonio.gov/sapd/Calls.aspx,Blue,a tbd link,25,11
 11/04/25, 2:05:43,2200 NE LOOP 410,78217,Traffic Calls,Traffic Related,4360,EAST,SAPD-2025-1538391,29.515195,-98.423106,1762243543000,http://www.sanantonio.gov/sapd/Calls.aspx,Yellow,a tbd link,25,11
@@ -13933,3 +13932,4 @@ Date,Time,Address,Zipcode,Category,ProblemType,PatrolDistrict,Substation,Inciden
 11/04/25, 5:28:31,900 Bitters Rd,78232,Other Calls,Disturbance Loud Music,3130,NORTH,SAPD-2025-1541823,29.561907,-98.480406,1762298911000,http://www.sanantonio.gov/sapd/Calls.aspx,Blue,a tbd link,25,11
 11/04/25, 5:30:03,5700 Dhaka Vw,78250,Other Calls,Information,7330,PRUE,SAPD-2025-1541828,29.487477,-98.638861,1762299003000,http://www.sanantonio.gov/sapd/Calls.aspx,Blue,a tbd link,25,11
 11/04/25, 5:31:08,I0 37 S Nb,78215,Traffic Calls,Traffic Related,1130,DOWNTOWN,SAPD-2025-1541837,29.435368,-98.477432,1762299068000,http://www.sanantonio.gov/sapd/Calls.aspx,Yellow,a tbd link,25,11
+11/04/25, 1:37:03,9800 Airport Blvd,78216,Other Calls,Assist the Public,SAT1,SAPD ACTIVE PERSONNEL,,29.526619,-98.471844,1762241823000,http://www.sanantonio.gov/sapd/Calls.aspx,Blue,a tbd link,25,11
