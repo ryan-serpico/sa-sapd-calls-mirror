@@ -49522,7 +49522,6 @@ Date,Time,Address,Zipcode,Category,ProblemType,PatrolDistrict,Substation,Inciden
 09/16/26, 4:15:43,Us Hwy 90 W / General Hudnell Dr,78207,Traffic Calls,Traffic Related,6310,SOUTH,SAPD-2026-1264439,29.39979,-98.533726,1789593343000,http://www.sanantonio.gov/sapd/Calls.aspx,Yellow,a tbd link,26,9
 09/16/26, 4:15:22,12300 Starcrest Dr,78232,Other Calls,Disturbance,3130,NORTH,SAPD-2026-1264438,29.554829,-98.47001,1789593322000,http://www.sanantonio.gov/sapd/Calls.aspx,Blue,a tbd link,26,9
 09/16/26, 4:22:17,10700 Potranco Rd,78245,Property Crime Calls,Theft of Vehicle,5360,WEST,SAPD-2026-1264470,29.434308,-98.703187,1789593737000,http://www.sanantonio.gov/sapd/Calls.aspx,Green,a tbd link,26,9
-09/15/26, 1:50:29,9800 Airport Blvd,78216,Other Calls,Property Found,SAT1,SAPD ACTIVE PERSONNEL,,29.526619,-98.471844,1789455029000,http://www.sanantonio.gov/sapd/Calls.aspx,Blue,a tbd link,26,9
 09/15/26, 8:09:13,6300 CAMP BULLIS RD,78257,Other Calls,Fire,7260,PRUE,SAPD-2026-1260636,29.628499,-98.605828,1789520953000,http://www.sanantonio.gov/sapd/Calls.aspx,Blue,a tbd link,26,9
 09/16/26, 8:49:52,6900 N LOOP 1604 E,78266,Property Crime Calls,Recovered Stolen Property,3260,NORTH,SAPD-2026-1262550,29.596058,-98.350394,1789566592000,http://www.sanantonio.gov/sapd/Calls.aspx,Green,a tbd link,26,9
 09/16/26, 5:33:15,500 Academic Ct,78204,Other Calls,Narcotic Laws,2340,CENTRAL,SAPD-2026-1264800,29.399216,-98.525768,1789597995000,http://www.sanantonio.gov/sapd/Calls.aspx,Blue,a tbd link,26,9
@@ -52847,3 +52846,4 @@ Date,Time,Address,Zipcode,Category,ProblemType,PatrolDistrict,Substation,Inciden
 09/17/26, 7:50:40,300 Sw Loop 410,78245-2166,Other Calls,Disturbance,5160,WEST,SAPD-2026-1270161,29.43937,-98.642481,1789692640000,http://www.sanantonio.gov/sapd/Calls.aspx,Blue,a tbd link,26,9
 09/17/26, 7:49:29,1200 Mira Vista,78228,Other Calls,Disturbance,5250,WEST,SAPD-2026-1270152,29.450125,-98.599867,1789692569000,http://www.sanantonio.gov/sapd/Calls.aspx,Blue,a tbd link,26,9
 09/17/26, 7:48:57,3200 S Zarzamora St,78225,Other Calls,Suspicious Person,6110,SOUTH,SAPD-2026-1270151,29.391597,-98.532186,1789692537000,http://www.sanantonio.gov/sapd/Calls.aspx,Blue,a tbd link,26,9
+09/15/26, 1:50:29,9800 Airport Blvd,78216,Other Calls,Property Found,SAT1,SAPD ACTIVE PERSONNEL,,29.526619,-98.471844,1789455029000,http://www.sanantonio.gov/sapd/Calls.aspx,Blue,a tbd link,26,9
